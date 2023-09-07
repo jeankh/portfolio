@@ -1,0 +1,97 @@
+.header {
+  width: 60%;
+  height: 100px;
+  position: fixed;
+  top: 1%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 15px;
+}
+.header.light {
+  background: white;
+}
+.header.dark {
+  background: #212121;
+}
+.nav-bar {
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding: 1.5vw 0;
+  margin: 0 1.5vw;
+}
+.main-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.nav-bar a img,
+.nav-bar button img {
+  background: transparent;
+  height: 40px;
+  width: 40px;
+  overflow: hidden;
+}
+.nav-bar a,
+.nav-bar button {
+  text-align: center;
+  vertical-align: middle;
+  height: 50px;
+  width: 50px;
+  --background-color: transparent;
+  background: var(--background-color);
+  border: none;
+  border-radius: 50%;
+  margin-left: 50px;
+  transition: 0.5s;
+}
+.nav-bar:last-child {
+  margin-right: 50px;
+}
+
+.nav-bar a:hover,
+.nav-bar button:hover {
+  transform: scale(1.5);
+  --background-color: rgba(0, 0, 0, 0.1);
+}
+
+.header.dark .nav-bar a:hover,
+header.dark .nav-bar button:hover {
+  --background-color: rgba(255, 255, 255, 0.1);
+}
+.nav-bar a:active,
+.nav-bar button:active {
+  transform: scale(1.2);
+  --background-color: rgba(0, 0, 0, 0.2);
+}
+.header.dark .nav-bar a:active,
+.header.dark nav-bar button:active {
+  --background-color: rgba(255, 255, 255, 0.2);
+}
+/* 
+button {
+  position: relative;
+}
+
+button[aria-label]:focus:after,
+button[aria-label]:hover:after {
+  position: absolute;
+  z-index: 1;
+  top: -2em;
+  left: 0;
+  display: block;
+  overflow: hidden;
+  width: 17em;
+  height: 2em;
+  border-radius: .2em;
+  padding: 0 .7em;    
+  content: attr(aria-label);
+  color: #fff;
+  background: #000;
+  font-size: 1em;
+  line-height: 2em;
+  text-align: left;
+}
+*/

@@ -1,0 +1,80 @@
+.home {
+  width: 60%;
+  height: 100%;
+  position: fixed;
+  top: 13%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  overflow: scroll;
+}
+
+/* 
+<div className="home">
+      <header className="presentation">
+        <h1>Name</h1>
+        <p>presentation</p>
+      </header>
+      <section className="projects">
+        <h2>Prosjects</h2>
+      </section>
+
+      <section className="hire">
+        <h2>hire me</h2>
+      </section>
+      <footer className="follow">
+        <p>follow me</p>
+      </footer>
+    </div> */
+
+.home.light {
+  background: white;
+  --child-bg-color: #f6f8fa;
+  --child-font-color: black;
+}
+.home.dark {
+  background: #212121;
+  --child-bg-color: #2c2c2c;
+  --child-font-color: white;
+}
+.presentation {
+  width: 95%;
+  height: 30vh;
+  background: var(--child-bg-color);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 15px;
+  margin: 10px 0;
+  color: var(--child-font-color);
+}
+.presentation img {
+  width: 20vh;
+  height: 20vh;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 50% 4%;
+  border: 5px double transparent;
+  background-image: linear-gradient(white, white),
+    linear-gradient(0deg, #a427ce, #903bff, #2469ff);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.about h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+.about p {
+  font-size: 18px;
+}

@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,600;0,700;1,600;1,700&family=Rubik&display=swap");
+
+body,
+html,
+.App {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #eceff3;
+  position: relative;
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-width: 100%;
+  min-height: 100%;
+  position: absolute;
+}
+.App.light {
+  background-color: #eceff3;
+}
+
+.App.dark {
+  background-color: #161616;
+}

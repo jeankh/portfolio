@@ -60,7 +60,7 @@ To run this project, you need to have the following software/tools installed on 
 
 ### Demo
 
-You can check out the live demo of the Portfolio here.
+You can check out the live demo of the Portfolio [here](https://jean.khoge.fr).
 
 ### Technologies
 

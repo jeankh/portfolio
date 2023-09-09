@@ -72,7 +72,7 @@ export const projects = [
         url: "https://github.com/jeankh/rock-paper-scissors",
       },
       {
-        text: "Demo",
+        text: "Live Site",
         url: "https://rock-paper-scissors.jean.khoge.fr/",
       },
     ],

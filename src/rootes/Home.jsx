@@ -1,27 +1,19 @@
 import React from "react";
 import "./home.css";
-import profilePicture from "../assets/jeanKhoge.jpg";
+import Presentatoin from "../components/Presentation";
+import Hire from "../components/Hire";
+import Follow from "../components/Follow";
+import Footer from "../components/Footer";
+import HomeProjects from "../components/HomeProjects";
 
-function Home({ theme, aboutMeData }) {
+function Home({ theme, aboutMeData, projects }) {
   return (
     <div className={`home ${theme}`}>
-      <header className="presentation">
-        <div className="about">
-          <h1>{aboutMeData.title}</h1>
-          <p>{aboutMeData.describetion}</p>
-        </div>
-        <img src={profilePicture} alt="profile picture" />
-      </header>
-      <section className="projects">
-        <h2>Prosjects</h2>
-      </section>
-
-      <section className="hire">
-        <h2>hire me</h2>
-      </section>
-      <footer className="follow">
-        <p>follow me</p>
-      </footer>
+      <Presentatoin aboutMeData={aboutMeData} />
+      <HomeProjects projects={projects} />
+      <Hire />
+      <Follow />
+      <Footer />
     </div>
   );
 }

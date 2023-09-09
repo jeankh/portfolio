@@ -1,0 +1,81 @@
+.project {
+  width: 95%;
+  height: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background: var(--background);
+  box-shadow: var(--shadow-color-1) 0px 3px 8px;
+  transition: 1s;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.project:hover {
+  box-shadow: var(--shadow-color-1) 0px 10px 20px,
+    var(--shadow-color-2) 0px 6px 6px;
+  background: var(--bg-hover);
+}
+
+.description {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: var(--child-font-color);
+  margin: 5px 15px;
+}
+#project-view {
+  background: var(--child-font-color);
+  margin: 10px 15px;
+  width: 10%;
+  height: 70%;
+  border-radius: 5px;
+  box-shadow: var(--shadow-color-1) 0px 3px 8px;
+}
+#arrow {
+  background: transparent;
+  margin: 10px 15px;
+  width: 10%;
+  height: 70%;
+}
+.description h3 {
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+.description p {
+  font-size: 15px;
+  margin: 5px;
+}
+
+@media (max-width: 820px), (max-height: 900px) {
+  .project {
+    width: 95%;
+    height: 50%;
+    flex-direction: column;
+    margin: 10px 0;
+  }
+  .description {
+    width: 80%;
+    align-items: center;
+    color: var(--child-font-color);
+    margin: 5px 15px;
+  }
+  #project-view {
+    margin: 20px 15px;
+    width: 50%;
+  }
+  #arrow {
+    width: 15%;
+  }
+  .description h3 {
+    text-align: center;
+    font-size: 20px;
+  }
+  .description p {
+    text-align: center;
+    font-size: 12px;
+  }
+}

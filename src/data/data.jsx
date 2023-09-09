@@ -14,18 +14,18 @@ export const pages = [
     label: "My Projects",
     link: "/my-projects",
   },
-  {
-    id: 4,
-    label: "Contact Me",
-    link: "/contact-me",
-  },
+  // {
+  //   id: 4,
+  //   label: "Contact Me",
+  //   link: "/contact-me",
+  // },
 ];
 
 export const aboutMeData = {
   name: "Jean Khoge",
   title: "Hello! I'm Jean Khoge",
   describetion:
-    "I am a software engineer specialized in full-stack development.",
+    "I am a software engineer proficient in full-stack development, with a deep understanding of both front-end and back-end technologies.",
   body: "I am a full-stack developer in my final year of studies. I have a strong passion for solving complex problems through coding. My journey into the world of software development began a few years ago, and since then, I have been continuously learning and enhancing my skills. My educational background is in computer science, but I am always eager to explore new technologies and opportunities.",
   highlightedBody:
     "As a full-stack developer, I am constantly seeking new challenges and projects to work on. I am particularly interested in web development and game development and have completed several personal projects in these areas. I am always enthusiastic about taking on fresh challenges and collaborating with others. I firmly believe that working on projects is the most effective way to learn and grow as a software engineer.",
@@ -41,35 +41,39 @@ export const contactMeText = {
 export const projects = [
   {
     title: "IP Address Tracker",
+    body: "A web app for IP address and domain information using IP Geolocation API and LeafletJS. Pinpoint locations or explore IPs with ease.",
     body1:
       "The IP Address Tracker is a web application designed to provide users with information about IP addresses and domains. It utilizes the IP Geolocation API by IPify and the LeafletJS library to offer a user-friendly experience. Whether you want to pinpoint your own location or gather details about a specific IP address or domain, this app has you covered.    ",
     body2:
       "Technology Stack: The app is built using ReactJS for the frontend, making it highly responsive and efficient. It leverages the IP Geolocation API by IPify for location data retrieval and integrates LeafletJS for interactive mapping.",
-    image: "path.jpg",
+    image: "../assets/IPAdTrApp.png",
     links: [
       {
         text: "Source Code",
-        url: "",
+        url: "https://github.com/jeankh/IP-Address-Tracker",
       },
       {
         text: "Live Site",
-        url: "",
+        url: "https://ip-address-tracker.jean.khoge.fr/",
       },
     ],
   },
   {
-    title: " App",
-    body1: "",
-    body2: "Technologies used: HTML, CSS and React.",
-    image: "path.jpg",
+    title: "Rock, Paper, Scissors Game",
+    body: "A web-based version of the classic Rock, Paper, Scissors game for a fun and interactive experience. Test your luck and strategy!",
+    body1:
+      "The Rock, Paper, Scissors Game is a web application that brings the classic hand game to your browser. It offers an interactive and fun experience where players can choose between Rock, Paper, and Scissors and see who wins. Test your luck and strategy in this timeless game!",
+    body2:
+      "Technology Stack: This game is built using React for the frontend, providing a dynamic and engaging user interface. It's designed to be responsive, making it accessible on various devices and screen sizes.",
+    image: "../assets/RPSGame.png",
     links: [
       {
         text: "Source Code",
-        url: "",
+        url: "https://github.com/jeankh/rock-paper-scissors",
       },
       {
-        text: "Live Site",
-        url: "",
+        text: "Demo",
+        url: "https://rock-paper-scissors.jean.khoge.fr/",
       },
     ],
   },

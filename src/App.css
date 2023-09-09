@@ -3,8 +3,10 @@
 body,
 html,
 .App {
-  height: 100%;
+  height: -webkit-fill-available;
   width: 100%;
+  overflow-y: auto;
+  transition: 0.5s;
 }
 
 body {
@@ -17,8 +19,6 @@ body {
 .App {
   display: flex;
   flex-direction: column;
-  min-width: 100%;
-  min-height: 100%;
   position: absolute;
 }
 .App.light {

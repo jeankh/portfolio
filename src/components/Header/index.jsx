@@ -3,7 +3,6 @@ import "./header.css";
 import home from "../../assets/Mall_home.svg";
 import about from "../../assets/about.svg";
 import projects from "../../assets/Managing_Projects.svg";
-import contact from "../../assets/me.svg";
 import dark from "../../assets/moon.svg";
 import light from "../../assets/light.svg";
 import { Link } from "react-router-dom";
@@ -18,9 +17,7 @@ function Header({ theme, onChangeTheme, pages }) {
     Home: home,
     "About me": about,
     "My Projects": projects,
-    "Contact Me": contact,
   };
-  console.log(theme);
   return (
     <header className={`header ${theme}`}>
       <nav className="nav-bar">

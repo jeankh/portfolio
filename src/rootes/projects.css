@@ -1,4 +1,4 @@
-.home {
+.Projects {
   width: 60%;
   height: -webkit-fill-available;
   position: fixed;
@@ -16,18 +16,18 @@
   --primary-color: 111, 76, 255;
 }
 
-.home::-webkit-scrollbar {
+.Projects::-webkit-scrollbar {
   width: 0px;
 }
 
-.home.light {
+.Projects.light {
   --bg-color: white;
   --child-bg-color: #f6f8fa;
   --child-font-color: black;
   --shadow-color-1: rgba(0, 0, 0, 0.19);
   --shadow-color-2: rgba(0, 0, 0, 0.23);
 }
-.home.dark {
+.Projects.dark {
   --bg-color: #212121;
   --child-bg-color: #2c2c2c;
   --child-font-color: white;
@@ -35,33 +35,33 @@
   --shadow-color-2: rgba(255, 255, 255, 0.23);
 }
 @media (max-width: 820px), (max-height: 900px) {
-  .home {
+  .Projects {
     width: 95%;
     top: 15%;
   }
 }
 
 @media (max-height: 950px) {
-  .home {
+  .Projects {
     width: 95%;
     top: 15%;
   }
 }
 @media (max-height: 650px) {
-  .home {
+  .Projects {
     width: 95%;
     top: 18%;
   }
 }
 @media (max-height: 450px) {
-  .home {
+  .Projects {
     width: 95%;
     top: 25%;
   }
 }
 
 @media (max-height: 280px) {
-  .home {
+  .Projects {
     width: 95%;
     top: 35%;
   }
